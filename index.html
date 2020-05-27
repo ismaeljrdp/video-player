@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Primeio GIT</title>
-</head>
-<body>
-    <h1>Meu primeiro GIT</h1>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Video Player</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <section id="search">
+                <form id="search-input">
+                    <input type="text" placeholder="Procurar por vídeo"/>
+                    <input type="submit" value="Buscar" />
+                </form>
+                <div id="search-results" class="search-results">
+                    <a href="#">Resultado 01</a>
+                    <a href="#">Resultado 02</a>
+                </div>
+            </section>
+        </header>
+
+        <article id="app">
+            <section class="column-1">
+                <video id="player">
+                    <source src="videos/video-01.mp4" type="video/mp4">
+                </video>
+                
+                <div id="controls">
+                    <button>►</button>
+                </div>
+            </section>
+
+            <section class="column-2">
+
+            </section>
+        </article>
+
+        <footer>
+            <p>&copy 2020 - Video Player</p>
+        </footer>
+
+        <script src="index.js"></script>
+    </body>
 </html>
