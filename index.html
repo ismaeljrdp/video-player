@@ -22,15 +22,38 @@
 
         <article id="app">
             <section class="column-1">
-                <video id="player">
+                <video id="player" controls>
                     <source src="videos/video-01.mp4" type="video/mp4">
                 </video>
 
-                <div id="controls">
-                    <button>►</button>
+                <div class="video-infos">
+                    <h1 id="video-name"></h1>
+                    <div class="infos-line-02">
+                        <label><span id="video-views"></span> visualizações • <span id="video-date"></span></label>
+                        <button>&#128516<span id="video-likes"></span></button>
+                        <button>&#128544<span id="video-deslikes"></span></button>
+                    </div>
                 </div>
 
-                <h1 id="title-video"></h1>
+                <div class="video-infos">
+                    <div class="infos-line-03">
+                        <div>
+                            <h2 id="video-author"></h2>
+                            <label><span id="video-subscribs"></span> inscritos</label>
+                        </div>
+
+                        <div>
+                            <button>Increver-se</button>
+                        </div>
+                     </div>
+
+                     <div>
+                        <p id="video-description" class="video-description"></p>
+                        <button id="video-descript-view-more">Mostrar Mais</button>
+                     </div>
+
+                </div>
+
             </section>
 
             <section class="column-2">
