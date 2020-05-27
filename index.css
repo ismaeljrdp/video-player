@@ -203,15 +203,23 @@ footer p
     font-size: 14pt;
 }
 
-.infos-line-03 button
+.subscribe
 {
     border: none;
     padding: 10px 20px;
+    width: 130px;
     background: rgb(211, 17, 59);
     color: white;
     border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.subscribe-true
+{
+    background: rgb(238, 238, 238);
+    color: rgb(124, 124, 124);
 }
 
 .video-description
@@ -234,4 +242,42 @@ footer p
     cursor: pointer;
     text-transform: uppercase;
     padding: 0;
+}
+
+.switch
+{
+    display: flex;
+    align-items: center;
+    -moz-appearance: none;
+    height: 30px;
+    width: 52px;
+    background: white;
+    border-radius: 30px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.switch::before
+{
+    display: flex;
+    content: " ";
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    background: #ccc;
+    margin-left: 2px;
+    transition: 0.3s;
+}
+
+.switch:checked
+{
+    background:rgb(211, 17, 59);
+    border: 2px solid rgb(211, 17, 59);
+}
+
+.switch:checked::before
+{
+    margin-left: 24px;
+    background: white;
 }

@@ -10,7 +10,7 @@ const videos = [
     {
         'name':'Video 01',
         'author' : 'Steve',
-        'subscribs':200560,
+        'subscribes':200560,
         'slug' :'56s4d29',
         'date' : '2018-10-02',
         'views' : 9892,
@@ -28,7 +28,7 @@ const videos = [
     {
         'name':'Video 02',
         'author' : 'Brad',
-        'subscribs':845560,
+        'subscribes':845560,
         'slug' :'56s4d29',
         'date' : '2019-12-16',
         'views' : 3412,
@@ -71,18 +71,31 @@ descriptionViewMore.addEventListener('click',(el) => {
 
     if(!descriptionState) {
         const description = document.getElementById('video-description')
-        description.classList.add('video-description-view-more');
-        descriptionState = true;
+        description.classList.add('video-description-view-more')
+        descriptionState = true
 
-        el.target.innerHTML = "Mostrar Menos";
-    }
-    else
-    {
+        el.target.innerHTML = "Mostrar Menos"
+    } else {
         const description = document.getElementById('video-description')
-        description.classList.remove('video-description-view-more');
-        descriptionState = false;
+        description.classList.remove('video-description-view-more')
+        descriptionState = false
 
-        el.target.innerHTML = "Mostrar Mais";
+        el.target.innerHTML = "Mostrar Mais"
     }
 
+});
+
+const subscribe = document.getElementById('subscribe')
+let subscribeState = false;
+
+subscribe.addEventListener('click',(el) => {
+    if(!subscribeState) {
+        el.target.classList.add('subscribe-true')
+        el.target.innerHTML = "Inscrito"
+        subscribeState = true
+    } else {
+        el.target.classList.remove('subscribe-true')
+        el.target.innerHTML = "Inscrever-se"
+        subscribeState = false
+    }
 });
