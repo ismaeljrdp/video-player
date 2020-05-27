@@ -13,10 +13,15 @@ const setView = (id) => {
         const dom = document.getElementById('video-'+key)
 
         if(dom) {
-            switch(dom.id) {
-                default:
-                    dom.innerHTML = videos[id][key]
-                break
+            if(typeof videos[id][key] === 'object') {
+                const commentsCount = document.getElementById('comments-count');
+                commentsCount.innerHTML = videos[id][key].length;
+                for (const comment in videos[id][key]) {
+                    dom.insertAdjacentHTML("beforebegin","<div class='comment'><label>"+videos[id][key][comment].author+"<span> "+videos[id][key][comment].time+"</span></label><p>"+videos[id][key][comment].comment+"</p><div><button>&#128516<span>"+videos[id][key][comment].likes+"</span></button><button>&#128544<span>"+videos[id][key][comment].deslikes+"</span></button></div></div>")
+                }
+        
+            } else {
+                dom.innerHTML = videos[id][key]
             }
         }        
     }
