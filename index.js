@@ -1,10 +1,10 @@
-const formInput = document.getElementById('search-input');
+const formInput = document.getElementById('search-input')
 
 formInput.addEventListener('submit',(el) => {
-    el.preventDefault();
+    el.preventDefault()
 
-    console.log(formInput[0].value);
-});
+    console.log(formInput[0].value)
+})
 
 const videos = [
     {
@@ -41,4 +41,11 @@ const videos = [
             'comment':'The best video!! Wool'
         }
     }
-];
+]
+
+const setView = (id) => {
+    const title = document.getElementById('title-video')
+    title.innerHTML = videos[id].name
+}
+
+setView(0);
