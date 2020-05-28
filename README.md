@@ -1,4 +1,3 @@
-# video-player
-Este repositório trata-se de uma reprodução do sistema do Yotube com foco na página de visualização do vídeo.
+# Video Player
 
-Na pasta raiz deve ser criada uma pasta com o nome "vídeos" e nela ser adicionados os vídeos para visualização no sistema. No arquivo videos.js deve ser adicionados os parametros do respectivo vídeo.
+Esse projeto se trata de uma reprodução do sistema do youtube, bem como reprodução, sugestão de novos vídeos, inscrição, likes, deslikes e comentários, tudo com o foco inicial no Front-End.
