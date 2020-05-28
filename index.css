@@ -162,7 +162,7 @@ footer p
 
 #video-name
 {
-    font-size: 18pt;
+    font-size: 24pt;
     font-weight: bold;
     margin: 0;
 }
@@ -199,8 +199,13 @@ footer p
 
 .infos-line-03 h2
 {
-    margin: 0;
-    font-size: 14pt;
+    margin: 5px 0 0;
+    font-size: 12pt;
+}
+
+.infos-line-03 label
+{
+    font-size: 10pt;
 }
 
 .subscribe
